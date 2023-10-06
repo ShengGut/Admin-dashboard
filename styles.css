@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(54,56,53);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1,4fr);
+    grid-template-rows: repeat(4,minmax(200px, 1fr));
+}
+
+
+
+ul,
+li {
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.header {
+    grid-column: 2 / span 4;
+    background-color: rgb(30,30,31);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.top-right {
+    justify-self: center;
+    margin-top: 16px;
+
+}
+
+.bottom-left {
+    margin-left: 4em;
+}
+
+.bottom-right {
+    justify-self: center;
+}
+
+.topnav input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: 16px;
+    margin-left: 48px;
+    font-size: 16px;
+    width: 600px;
+    border-radius: 24px;
+  }
+
+.sidebar {
+    grid-row: 1 / span 4;
+    background-color: rgb(54, 146, 203);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+
+.sidebar > ul h2 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.sidebar > ul li {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.main-content {
+    background-color: rgb(54, 56, 53);
+    grid-row: 2 / span 4;
+    grid-column: 2/ span 4;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
+
+}
+
+.main-content > .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(125px, 1fr));
+}
+
+
+.card {
+    height: 200px;
+    border: 2px solid yellow;
+    background-color: rgb(60,63,62);
+}
