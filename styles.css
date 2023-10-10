@@ -88,27 +88,39 @@ li {
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
     grid-template-rows: repeat(1,36px) repeat(1,1fr);
     column-gap: 32px;
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 
 .main-content h2 {
-    margin-top: 4px;
     margin-left: 28px;
 }
 
 .main-content > .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(125px, 1fr));
-    gap: 32px;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 32px;
     margin-left: 2em;
 }
-
 
 .card {
     height: 200px;
     background-color: rgb(70, 70, 70);
-    border-radius: 24px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(1, 4px) repeat(1,1fr);
+}
+
+.card-content {
     padding: 24px;
+}
+
+.left-border {
+    background-color: yellow;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
 }
 
 .card .title {
@@ -119,12 +131,19 @@ li {
 .right-side {
     display:grid;
     grid-template-rows: repeat(1, 1fr) repeat(1,36px) repeat(1,1fr);
+    margin-right: 24px;
 }
 
 .right-side .announcement {
     background-color: rgb(70, 70, 70);
     border-radius: 24px;
     display: grid;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.right-side h2 {
+    margin-left: 28px;
 }
 
 .announcement > div {
