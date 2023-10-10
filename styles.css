@@ -13,8 +13,6 @@ body {
     grid-template-rows: repeat(4,minmax(200px, 1fr));
 }
 
-
-
 ul,
 li {
     font-size: 16px;
@@ -31,8 +29,7 @@ li {
 
 .top-right {
     justify-self: center;
-    margin-top: 16px;
-
+    margin-top: 24px;
 }
 
 .bottom-left {
@@ -43,12 +40,23 @@ li {
     justify-self: center;
 }
 
+.bottom-right button {
+    background-color: rgb(54, 146, 203);
+    border: none;
+    padding: 8px 32px;
+    border-radius: 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px;
+}
+
 .topnav input[type=text] {
     float: center;
     padding: 6px;
     border: none;
-    margin-top: 16px;
-    margin-left: 48px;
+    margin-top: 24px;
+    margin-left: 128px;
     font-size: 16px;
     width: 600px;
     border-radius: 24px;
@@ -79,22 +87,33 @@ li {
     display: grid;
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
     grid-template-rows: repeat(1,36px) repeat(1,1fr);
+    column-gap: 32px;
+}
 
+.main-content h2 {
+    margin-top: 4px;
+    margin-left: 28px;
 }
 
 .main-content > .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, minmax(125px, 1fr));
-    gap: 16px;
+    gap: 32px;
     margin-left: 2em;
 }
 
 
 .card {
     height: 200px;
-    border: 2px solid yellow;
-    background-color: rgb(60,63,62);
+    background-color: rgb(70, 70, 70);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.card .title {
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .right-side {
@@ -103,11 +122,28 @@ li {
 }
 
 .right-side .announcement {
-    border: 2px solid red;
+    background-color: rgb(70, 70, 70);
+    border-radius: 24px;
     display: grid;
 }
 
+.announcement > div {
+    padding: 16px 16px 0 16px;
+    font-weight: bold;
+}
+
+.announcement p {
+    padding: 8px 16px 40px 16px;
+}
+
+
 .right-side .trending {
-    border: 2px solid blue;
+    background-color: rgb(70, 70, 70);
+    border-radius: 24px;
     display: grid;
+}
+
+.trending > div {
+    margin-top: 16px;
+    margin-left: 200px;
 }
